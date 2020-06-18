@@ -1,40 +1,23 @@
-.container {
-    width: 320px;
-    height: 320px;
-    margin: auto;
-    margin-top: 100px;
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 610px;
+    height: 610px;
+    background-color: black;
   }
   
-  .container h1 {
-    text-align: center;
-    font-size: 50px;
+  .grid div {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 5px;
   }
   
-  .row {
-    height: 100px;
+  .playerX {
+    background-image: url('cross.png')
   }
   
-  .col {
-    height: 100px;
-    width: 100px;
-    float: left;
-    font-size: 100px;
-    text-align: center;
-    line-height: 100px;
-  }
-  
-  .col:hover {
-      background-color: lightgray;
-  }
-  
-  .border-b {
-    border-bottom: 10px solid black;
-  }
-  
-  .border-r {
-    border-right: 10px solid black;
-  }
-  
-  .winner {
-      color: blue;
+  .playerO {
+    background-image: url('circle.png')
   }
