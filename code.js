@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function clickOutcome(event) {
         const squareArray = Array.from(squares)
         const index = squareArray.indexOf(event.target)
-        console.log(index)
         playerDisplay.innerHTML = currentPlayer
 
         if(currentPlayer === "playerMike") {
