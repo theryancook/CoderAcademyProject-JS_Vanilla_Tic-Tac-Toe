@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const squares = document.querySelectorAll(".grid div")
     const playerDisplay = document.querySelector("#player")
-    let currentPlayer = "playerX"
+    let currentPlayer = "playerMike"
 
     squares.forEach(square => {
         square.addEventListener("click", clickOutcome)
@@ -9,14 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function clickOutcome(event) {
         const squareArray = Array.from(squares)
-        const indexPosition = squareArray.indexOf(event.target)
-        console.log(indexPosition)
+        const index = squareArray.indexOf(event.target)
+        console.log(index)
         playerDisplay.innerHTML = currentPlayer
 
-        if(currentPlayer === "playerX") {
-            currentPlayer = "player0"
+        if(currentPlayer === "playerMike") {
+            squares[index].classList.add("playerMike")
+            currentPlayer = "playerBruce"
         } else {
-            currentPlayer = "playerX"
+            squares[index].classList.add("playerBruce")
+            currentPlayer = "playerMike"
         }
     }
 })

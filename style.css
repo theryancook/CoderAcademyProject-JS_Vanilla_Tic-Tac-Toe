@@ -14,10 +14,10 @@
     margin-bottom: 5px;
   }
   
-  .playerX {
-    background-image: url('cross.png')
+  .playerMike {
+    background-image: url("mike-cross (1).png")
   }
   
-  .playerO {
-    background-image: url('circle.png')
+  .playerBruce {
+    background-image: url("bruce-oh3.png")
   }
